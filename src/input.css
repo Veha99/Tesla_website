@@ -17,8 +17,8 @@ html {
     @apply flex items-center justify-between w-full fixed top-0 z-10 h-[5.4rem] p-[3.2rem];
 }
 
-.car_section{
-    @apply w-full h-screen;
+.body_section{
+    @apply w-full h-screen relative;
 }
 
 .car_img{
@@ -27,10 +27,6 @@ html {
 
 .car_detail{
     @apply absolute top-[20%] left-[50%] text-center;
-}
-
-.car_detail_3{
-    @apply absolute top-[120%] left-[50%] text-center;
 }
 
 .transfer_50{
@@ -46,11 +42,7 @@ html {
 }
 
 .card_btn{
-    @apply absolute top-[85%] left-[50%];
-}
-
-.card_btn_3{
-    @apply absolute top-[185%] left-[50%];
+    @apply absolute top-[85%] left-[50%] flex flex-col xl:flex-row;
 }
 
 .btn{
@@ -58,13 +50,9 @@ html {
 }
 
 .inventory{
-    @apply text-[#393c41] bg-white bg-opacity-60 ml-8;
+    @apply text-[#393c41] bg-white bg-opacity-60 xl:ml-8;
 }
 
 .down_svg{
     @apply block w-full h-20 mx-auto absolute top-[93%] animate-bounce;
-}
-
-.down_svg_3{
-    @apply block w-full h-20 mx-auto absolute top-[193%] animate-bounce;
 }

@@ -534,121 +534,20 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.fixed {
-  position: fixed;
-}
-
-.top-0 {
-  top: 0px;
-}
-
-.z-10 {
-  z-index: 10;
-}
-
-.mx-\[0\.8rem\] {
-  margin-left: 0.8rem;
-  margin-right: 0.8rem;
-}
-
-.flex {
-  display: flex;
-}
-
-.h-\[5\.4rem\] {
-  height: 5.4rem;
+.hidden {
+  display: none;
 }
 
 .h-6 {
   height: 1.5rem;
 }
 
-.w-full {
-  width: 100%;
-}
-
 .cursor-pointer {
   cursor: pointer;
 }
 
-.items-center {
-  align-items: center;
-}
-
-.justify-between {
-  justify-content: space-between;
-}
-
-.rounded-\[0\.8rem\] {
-  border-radius: 0.8rem;
-}
-
-.bg-yellow-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
-}
-
-.bg-transparent {
-  background-color: transparent;
-}
-
-.p-\[3\.2rem\] {
-  padding: 3.2rem;
-}
-
-.px-\[0\.8rem\] {
-  padding-left: 0.8rem;
-  padding-right: 0.8rem;
-}
-
-.py-\[0\.4rem\] {
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.font-bold {
-  font-weight: 700;
-}
-
-.font-semibold {
-  font-weight: 600;
-}
-
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\#181b21\] {
-  --tw-text-opacity: 1;
-  color: rgb(24 27 33 / var(--tw-text-opacity));
-}
-
 .underline {
   text-decoration-line: underline;
-}
-
-.transition-all {
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.duration-150 {
-  transition-duration: 150ms;
-}
-
-.duration-200 {
-  transition-duration: 200ms;
-}
-
-.duration-300 {
-  transition-duration: 300ms;
 }
 
 html {
@@ -693,7 +592,8 @@ html {
   padding: 3.2rem;
 }
 
-.car_section {
+.body_section {
+  position: relative;
   height: 100vh;
   width: 100%;
 }
@@ -708,13 +608,6 @@ html {
 .car_detail {
   position: absolute;
   top: 20%;
-  left: 50%;
-  text-align: center;
-}
-
-.car_detail_3 {
-  position: absolute;
-  top: 120%;
   left: 50%;
   text-align: center;
 }
@@ -741,12 +634,14 @@ html {
   position: absolute;
   top: 85%;
   left: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
-.card_btn_3 {
-  position: absolute;
-  top: 185%;
-  left: 50%;
+@media (min-width: 1280px) {
+  .card_btn {
+    flex-direction: row;
+  }
 }
 
 .btn {
@@ -770,11 +665,16 @@ html {
 }
 
 .inventory {
-  margin-left: 2rem;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.6;
   --tw-text-opacity: 1;
   color: rgb(57 60 65 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1280px) {
+  .inventory {
+    margin-left: 2rem;
+  }
 }
 
 .down_svg {
@@ -803,41 +703,8 @@ html {
   animation: bounce 1s infinite;
 }
 
-.down_svg_3 {
-  position: absolute;
-  top: 193%;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  height: 5rem;
-  width: 100%;
-}
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(-25%);
-    animation-timing-function: cubic-bezier(0.8,0,1,1);
+@media (min-width: 1280px) {
+  .xl\:block {
+    display: block;
   }
-
-  50% {
-    transform: none;
-    animation-timing-function: cubic-bezier(0,0,0.2,1);
-  }
-}
-
-.down_svg_3 {
-  animation: bounce 1s infinite;
-}
-
-.hover\:bg-\[\#181b21\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(24 27 33 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-opacity-10:hover {
-  --tw-bg-opacity: 0.1;
-}
-
-.hover\:ease-in-out:hover {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
